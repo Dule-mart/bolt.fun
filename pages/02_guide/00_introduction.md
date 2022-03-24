@@ -48,7 +48,7 @@ _For a full overview of what this site will eventually become, feel free to also
 
 There are limitations in the current financial system that make payment services inaccessible to people in many places of the world — not everyone has access to bank accounts, identification, proof of address or are in countries which support the use of modern financial services.
 
-We have established that [Bitcoin is money](https://bitcoin.design/guide/getting-started/why-bitcoin-is-unique/#its-money-but-digital) and [Bitcoin is global](https://bitcoin.design/guide/getting-started/why-bitcoin-is-unique/#global-by-default) now we dive into how it can be used to facilitate payments.
+We have established that [Bitcoin is money](https://bitcoin.design/guide/getting-started/why-bitcoin-is-unique/#its-money-but-digital) and [Bitcoin is global](https://bitcoin.design/guide/getting-started/why-bitcoin-is-unique/#global-by-default) we'll dive into how it can be used to facilitate payments.
 
 ## Bitcoin is extensible, it's not just a payment network
 
@@ -60,7 +60,7 @@ Some people may have the perception that Bitcoin is anonymous. This isn't quite 
 
 #### Why are transactions public?
 
-They are public so that anyone can have the ability to verify the entire history of transactions themselves. We call this a permissionless system. No one needs to ask for permission to send a transaction or to build experiences on top of Bitcoin.
+They are public so that anyone can have the ability to verify the entire history of transactions themselves. We call this a permissionless system. You don't need permission to send a transaction or to build experiences on top of Bitcoin.
 
 #### What about privacy?
 
@@ -83,7 +83,7 @@ The Lightning Network is part of the Bitcoin ecosystem that will power this econ
 
 #### A Network of Payment Channels and Settlement
 
-If two parties want to make payments between themselves often, they can lock up some funds together in an on-chain transaction. Then they are able to bypass recording their subsequent payments with one another on-chain, by instead keeping track of each of their bitcoin balances in Lightning.
+If two parties want to make payments between themselves often, they can lock up some funds together in an on-chain transaction. By locking up some funds in an on-chain transaction, both of you are able to bypass recording of subsequent payments with one another on-chain, by keeping track of each others bitcoin balances in Lightning.
 
 {% include picture.html	
    image = "/assets/images/payment-channels.svg"
@@ -98,7 +98,7 @@ This is known as a payment channel, Lightning is essentially a network of paymen
 
 ##### How it works
 
-Instead of recording each payment as an on-chain transaction to be secured in a block, they instead keep track of the balance at each side of the payment channel. The two parties only need to make a final settlement on-chain if that relationship ends and they want to "close" the channel which would unlock the balance on their side of the payment channel on-chain.
+Instead of recording each payment as an on-chain transaction to be secured in a block, it keep track of the balance at each side of the payment channel. The two parties only need to make a final settlement on-chain if that relationship ends and they want to "close" the channel which would unlock the balance on each side of the payment channel on-chain.
 
 Lighting payments gain us some privacy since the payments are not individually recorded on-chain in a transaction, only the final settlement is.
 
